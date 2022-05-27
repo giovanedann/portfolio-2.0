@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { mainLightPurple } from "../../styles/constants";
 
 export const AboutContainer = styled.div`
-  margin-top: 10rem;
+  margin-top: 15rem;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -75,8 +75,9 @@ export const SkillsSection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 150px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
     transition: 0.2s ease-in-out;
 
     .skill-icon, p {
@@ -102,7 +103,24 @@ export const SkillsSection = styled.section`
   }
 
   .skill-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
-`;
+
+  @media screen and (min-width: 420px) {
+    .skill-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 150px;
+      height: 200px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+}`;

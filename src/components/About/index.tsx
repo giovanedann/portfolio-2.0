@@ -3,8 +3,6 @@ import { AboutSection, SkillsSection, AboutContainer } from "./styles";
 
 import { skills } from "./data";
 
-import me from '../../assets/images/me.png';
-
 const About: React.FC = () => {
   return (
     <AboutContainer>
@@ -14,7 +12,6 @@ const About: React.FC = () => {
           <h2>Front-End Developer</h2>
           <p>{ description }</p>
         </div>
-        <img src={ me } alt='giovane-picture' />
       </AboutSection>
       <SkillsSection>
         <h1>Skills</h1>
