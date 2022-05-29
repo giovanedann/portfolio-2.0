@@ -1,6 +1,4 @@
-import Header from '../Header'
-import About from '../About';
-import ProjectSection from '../Projects/ProjectSection';
+import { Header, About, ProjectSection, Contact, Footer } from '../'
 
 function App() {
   return (
@@ -8,6 +6,8 @@ function App() {
       <Header />
       <About />
       <ProjectSection />
+      <Contact />
+      <Footer />
     </>
   )
 }

@@ -15,8 +15,8 @@ export const NavbarStyles = styled.nav<{ toggled: boolean }>`
   height: 100vh;
   transform: translateY(-1000px);
   -webkit-transform: translateY(-1000px);
-  transition: 0.6s ease-in-out;
   opacity: 0;
+  transition: 0.6s ease-in-out;
 
   ${({ toggled }) => toggled && css`
     opacity: 1;
@@ -36,6 +36,7 @@ export const NavbarStyles = styled.nav<{ toggled: boolean }>`
         font-weight: 500;
         color: #FFF;
         transition: 0.3s ease-in-out;
+        scroll-behavior: smooth;
 
         &:hover {
           color: ${mainPurple};

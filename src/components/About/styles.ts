@@ -82,7 +82,7 @@ export const SkillsSection = styled.section`
   margin-top: 10rem;
   
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .line {
@@ -158,7 +158,17 @@ export const SkillsSection = styled.section`
     }
   }
 
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
   @media screen and (min-width: 1300px) {
+    h1 {
+      font-size: 60px;
+    }
+
     .skill-container {
       width: 200px;
       height: 250px;

@@ -14,7 +14,7 @@ const Navbar: React.FC<Props> = ({ toggled, onLinkClick }) => {
         {
           links.map((item) => (
             <li key={ item }>
-              <a onClick={ onLinkClick } href={`#${item === 'Home' ? 'top' : item}`}>{item}</a>
+              <a onClick={ onLinkClick } href={`#${item === 'Home' ? 'top' : item }`}>{item}</a>
             </li>
           ))
         }

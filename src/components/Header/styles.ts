@@ -8,14 +8,24 @@ interface Props {
 export const HeaderContainer = styled.header<Props>`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px;
   top: 0;
-  background-color: ${mainBackgroundColor};
-  width: 100%;
   left: 0;
   right: 0;
+  background-color: ${mainBackgroundColor};
+  width: 100%;
   position: fixed;
   z-index: 2;
+
+  .burger-icon {
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      fill: #999E9C;
+    }
+  }
 `
 
 export const NameDiv = styled.div`
@@ -32,4 +42,5 @@ export const NameDiv = styled.div`
 
 export const HeaderText = styled.p<Props>`
   font-size: 15px;
+  margin-top: 12px;
 `;

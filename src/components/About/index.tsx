@@ -5,7 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const About: React.FC = () => {
   const { text } = useTypewriter({
     words: ['Sass', 'Saes'],
-    loop: 0,
+    loop: 1,
   })
 
   return (
@@ -16,7 +16,7 @@ const About: React.FC = () => {
           <h1>Giovane <span>{ text }<Cursor /></span></h1>
           <h2 id="About">Front-End Developer</h2>
           <div className="line"></div>
-          <p><span>Hello, i'm Giovane!</span> A Front-End Developer based in São Paulo, Brazil.</p>
+          <p><span>Hello 👋, i'm Giovane!</span> A Front-End Developer based in São Paulo, Brazil.</p>
           <p>Since i finished my degree in Mechanical Engineering, i started to program things using VBA and Excel.</p> 
           <p>After seeing the power of programming, i started learning JavaScript and fell in love with web development, specially Front-End.</p>
           <p>I am really passionate about solving problems and <span>i'm open for work! <span className="emoji">😁</span></span></p>

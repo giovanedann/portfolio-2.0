@@ -4,7 +4,8 @@ Refactored with Typescript and Styled Components!
 
 ##### Tasks to Do 
 - [x] Projects section
-- [] Footer section
+- [x] Contact Section
+- [x] Footer section
 - [] Implement Context API
 - [] Animations on user scroll
 - [] Tests with RTL

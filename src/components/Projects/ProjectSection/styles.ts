@@ -22,7 +22,7 @@ export const ProjectSectionContainer = styled.div`
     background-color: ${ mainLightPurple }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 800px) {
     h1 {
       font-size: 50px;
     }
