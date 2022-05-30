@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { mainDarkerPurple, mainLightPurple, mainMediumPurple, mainPurple } from '../../../styles/constants';
+import { mainLightPurple, mainMediumPurple, mainPurple } from '../../../styles/constants';
 
 export const ProjectCardContainer = styled.div`
   display: flex;
@@ -49,8 +49,9 @@ export const ProjectCardContainer = styled.div`
       span {
         padding: 6px;
         font-size: 9px;
-        background-color: ${mainMediumPurple};
+        background-color: #222;
         color: #fff;
+        border: 3px solid rgba(255, 255, 255, 0.1);
         font-weight: 400;
         border-radius: 6px;
         opacity: 0.8;
@@ -59,7 +60,6 @@ export const ProjectCardContainer = styled.div`
         &:hover {
           cursor: default;
           transform: translateY(-3px);
-          background-color: ${mainLightPurple};
         }
       }
     }
@@ -80,7 +80,7 @@ export const ProjectCardContainer = styled.div`
         text-decoration: none;
         border-radius: 5px;
         color: white;
-        background-color: ${mainLightPurple};
+        background-color: ${mainPurple};
         transition: 0.3s ease-in-out;
         
         &:hover {

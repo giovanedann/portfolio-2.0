@@ -30,8 +30,8 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         </div>
 
         <div className="project-links">
-          <a target="_blank" href={ props.repository }>Repository <HiExternalLink size={ 13 } /></a>
-          <a target="_blank" href={props.deploy}>Deploy <HiExternalLink size={ 13 } /></a>
+          <a target="_blank" href={ props.repository }>Repository <HiExternalLink size={ 16 } /></a>
+          <a target="_blank" href={props.deploy}>Live preview <HiExternalLink size={ 16 } /></a>
         </div>
 
       </div>
