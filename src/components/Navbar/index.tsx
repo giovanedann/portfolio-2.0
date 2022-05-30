@@ -4,7 +4,7 @@ const links = ['Home', 'About', 'Projects', 'Contact']
 
 interface Props {
   toggled: boolean
-  onLinkClick: () => void;
+  onLinkClick: () => void
 }
 
 const Navbar: React.FC<Props> = ({ toggled, onLinkClick }) => {
@@ -14,7 +14,7 @@ const Navbar: React.FC<Props> = ({ toggled, onLinkClick }) => {
         {
           links.map((item) => (
             <li key={ item }>
-              <a onClick={ onLinkClick } href="#">{item}</a>
+              <a onClick={ onLinkClick } href={`#${item === 'Home' ? 'top' : item }`}>{item}</a>
             </li>
           ))
         }

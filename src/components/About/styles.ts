@@ -1,9 +1,8 @@
 import styled from "styled-components"
-
 import { mainLightPurple } from "../../styles/constants";
 
 export const AboutContainer = styled.div`
-  margin-top: 10rem;
+  margin-top: 15rem;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -17,36 +16,60 @@ export const AboutSection = styled.section`
   justify-content: space-evenly;
   align-items: center;
 
+  .line {
+    background: ${mainLightPurple};
+    width: 90%;
+    height: 4px;
+    margin: 4rem 0;
+  }
+
   .description {
-    width: 70%;
+    width: 80%;
     margin-bottom: 50px;
   }
 
-  img {
-    border-radius: 30%;
-    max-width: 80%;
-    height: auto;
-  }
-
   h1 {
+    width: fit-content;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 50px;
+    min-height: 150px;
   }
 
   h2 {
-    margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   p {
     font-weight: 400;
+    margin: 25px 0;
+
+    span {
+      font-weight: 700;
+      color: ${mainLightPurple}
+    }
+
+    .emoji {
+      font-size: 20px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
 
     .description{
-      width: 50%;
+      width: 70%;
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 23px;
+      }
     }
   }
 `;
@@ -59,11 +82,17 @@ export const SkillsSection = styled.section`
   margin-top: 10rem;
   
   h1 {
-    font-size: 50px;
-    margin-bottom: 5rem;
+    font-size: 40px;
   }
 
-  .skills-container{
+  .line {
+    background: ${mainLightPurple};
+    width: 82%;
+    height: 4px;
+    margin: 4rem 0;
+  }
+
+  .skills-container {
     display: flex;
     flex-flow: row wrap;
     width: 80%;
@@ -75,8 +104,9 @@ export const SkillsSection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 150px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
     transition: 0.2s ease-in-out;
 
     .skill-icon, p {
@@ -102,7 +132,55 @@ export const SkillsSection = styled.section`
   }
 
   .skill-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
-`;
+
+  @media screen and (min-width: 420px) {
+    .skill-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 150px;
+      height: 200px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+  @media screen and (min-width: 600px) {
+    .skills-container {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    h1 {
+      font-size: 60px;
+    }
+
+    .skill-container {
+      width: 200px;
+      height: 250px;
+    }
+    
+    .skill-icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    .skill-container p {
+      font-size: 15px;
+    }
+  }
+}`;

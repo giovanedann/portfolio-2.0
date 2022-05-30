@@ -4,12 +4,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { HeaderContainer, HeaderText, NameDiv } from './styles';
 import Navbar from '../Navbar';
 
-const headerIconsStyle = {
-  cursor: 'pointer',
-  marginRight: '30px',
-  marginTop: '30px',
-}
-
 const Header: React.FC = () => {
   const [toggleLinks, setToggleLinks] = useState(false);
 
@@ -20,15 +14,25 @@ const Header: React.FC = () => {
       <HeaderContainer id="Home" toggled={ toggleLinks }>
 
         <NameDiv>
-          <FaCode size={ 30 } style={ { marginBottom: '10px' } }/>
+          <FaCode size={ 30 } />
           <HeaderText toggled={ toggleLinks }>Giovane Saes</HeaderText>
         </NameDiv>
 
         { !toggleLinks 
-        && <AiOutlineMenu size={ 30 } style={ headerIconsStyle } onClick={ toggleMenu } /> }
+        && (
+        <AiOutlineMenu
+          size={ 40 }
+          className="burger-icon"
+          onClick={ toggleMenu }
+        />) }
 
         { toggleLinks 
-        && <AiOutlineClose size={ 30 } style={ headerIconsStyle } onClick={ toggleMenu } /> }
+        && (
+        <AiOutlineClose
+          size={ 40 }
+          className="burger-icon"
+          onClick={ toggleMenu }
+        />) }
 
       </HeaderContainer>
 

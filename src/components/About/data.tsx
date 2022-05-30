@@ -17,11 +17,6 @@ import {
   SiSass,
 } from 'react-icons/si'
 
-export const description: string = `
-Hello, i'm a Front-End developer based in São Paulo.
-Since i finished my degree in Mechanical Engineering, i started to program things in VBA and Excel. After seeing the power of programming, i started learning JavaScript and fell in love with web development, specially Front-End.
-`
-
 interface SkillsObject {
   name: string
   svg: React.ReactNode
