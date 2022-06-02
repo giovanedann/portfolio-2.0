@@ -99,59 +99,6 @@ export const SkillsSection = styled.section`
     justify-content: center;
   }
 
-  .skill-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 120px;
-    height: 120px;
-    margin: 20px 0;
-    transition: 0.2s ease-in-out;
-
-    .skill-icon, p {
-      transition: 0.2s ease-in-out;
-    }
-
-    p {
-      text-align: center;
-      max-width: 100px;
-    }
-
-    &:hover {
-      transform: scale(1.04);
-
-      .skill-icon {
-        fill: ${mainLightPurple}
-      }
-      
-      p {
-        color: ${mainLightPurple}
-      }
-    }
-  }
-
-  .skill-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  @media screen and (min-width: 420px) {
-    .skill-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width: 150px;
-      height: 200px;
-      transition: 0.2s ease-in-out;
-    }
-
-    .skill-icon {
-      width: 50px;
-      height: 50px;
-    }
-
   @media screen and (min-width: 600px) {
     .skills-container {
       width: 70%;
@@ -168,19 +115,66 @@ export const SkillsSection = styled.section`
     h1 {
       font-size: 60px;
     }
+  }
+`;
 
-    .skill-container {
-      width: 200px;
-      height: 250px;
+export const SkillContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+  transition: 0.2s ease-in-out;
+
+  .skill-icon, p {
+    transition: 0.2s ease-in-out;
+  }
+
+  p {
+    text-align: center;
+    max-width: 100px;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+
+    .skill-icon {
+      fill: ${ ({ color }) => color }
     }
+    
+    p {
+      color: ${ ({ color }) => color }
+    }
+  }
+
+  @media screen and (min-width: 420px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    height: 200px;
+    transition: 0.2s ease-in-out;
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    width: 200px;
+    height: 250px;
     
     .skill-icon {
       width: 70px;
       height: 70px;
     }
 
-    .skill-container p {
+    p {
       font-size: 15px;
     }
   }
-}`;
+`;

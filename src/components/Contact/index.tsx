@@ -12,11 +12,11 @@ const Contact: React.FC = () => {
         <p>Mail me at <a href="mailto:giovanes.dev@gmail.com">giovanes.dev@gmail.com</a></p>
         <p>Or get in touch:</p>
         <div className="social-icons-container">
-          <a href="https://github.com/giovanedann" target="_blank">
-            <SiGithub className="social-icon" />
+          <a href="https://github.com/giovanedann" id="github-link" target="_blank">
+            <SiGithub className="social-icon github" />
           </a>
-          <a href="https://www.linkedin.com/in/giovane-saes-a53b38196/" target="_blank">
-            <SiLinkedin className="social-icon" />
+          <a href="https://www.linkedin.com/in/giovane-saes-a53b38196/" id="linkedin-link" target="_blank">
+            <SiLinkedin className="social-icon linkedin" />
           </a>
         </div>
       </ContactTextsContainer>

@@ -1,4 +1,4 @@
-import { AboutSection, SkillsSection, AboutContainer } from "./styles";
+import { AboutSection, SkillsSection, AboutContainer, SkillContainer } from "./styles";
 import { skills } from "./data";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -28,11 +28,11 @@ const About: React.FC = () => {
         <div className="line"></div>
         <div className="skills-container">
           {
-            skills.map(({ name, svg}) => (
-              <div key={ name } className="skill-container">
+            skills.map(({ name, svg, color }) => (
+              <SkillContainer key={ name } color={ color }>
                 { svg }
                 <p>{ name }</p>
-              </div>
+              </SkillContainer>
             ))
           }
         </div>

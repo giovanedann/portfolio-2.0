@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { mainLightPurple, mainMediumPurple, mainPurple } from '../../../styles/constants';
+import { mainPurple } from '../../../styles/constants';
 
 export const ProjectCardContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ export const ProjectCardContainer = styled.div`
   }
 
   .project-image {
-    width: 80%;
+    width: 500px;
     height: auto;
     border-radius: 10px;
   }
@@ -75,7 +75,7 @@ export const ProjectCardContainer = styled.div`
         align-items: center;
         gap: 5px;
         font-size: 10px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 7px;
         text-decoration: none;
         border-radius: 5px;

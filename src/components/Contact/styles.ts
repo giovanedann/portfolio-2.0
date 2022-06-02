@@ -37,6 +37,7 @@ export const ContactTextsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
   gap: 20px;
 
   p {
@@ -73,6 +74,7 @@ export const ContactTextsContainer = styled.div`
     .social-icon {
       width: 40px;
       height: 40px;
+      transition: 0.3s ease-in-out;
     }
 
     a {
@@ -82,7 +84,14 @@ export const ContactTextsContainer = styled.div`
 
       &:hover {
         transform: translateY(-2px);
-        color: ${mainLightPurple};
+
+        .linkedin {
+          fill: #0A66C2;
+        }
+
+        .github {
+          fill: #7B7B7B;
+        }
       }
     }
   }
@@ -94,6 +103,8 @@ export const ContactTextsContainer = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
+    margin-top: 5rem;
+
     .social-icons-container {
       margin-top: 6rem;
 

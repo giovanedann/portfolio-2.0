@@ -11,6 +11,7 @@ const ProjectSection: React.FC = () => {
         {
           projects.map((project) => (
             <ProjectCard
+              key={ project.name + project.description }
               name={ project.name }
               description={ project.description }
               technologies={ project.technologies }

@@ -4,7 +4,7 @@ import { mainLightPurple } from '../../../styles/constants';
 export const ProjectSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 10rem;
   gap: 30px;
   align-items: center;
   justify-content: center;
