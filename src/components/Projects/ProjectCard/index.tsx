@@ -24,8 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         <p className="project-description">{ props.description }</p>
 
         <div className="project-techs">
-          { props.technologies.map((item) => (
-            <span className="tech">{ item }</span>
+          { props.technologies.map((item, index) => (
+            <span className="tech" key={ item + index }>{ item }</span>
           ))}
         </div>
 
