@@ -18,7 +18,7 @@ export const ProjectCardContainer = styled.div`
   }
 
   .project-image {
-    width: 500px;
+    width: 80%;
     height: auto;
     border-radius: 10px;
   }
@@ -98,10 +98,6 @@ export const ProjectCardContainer = styled.div`
   }
 
   @media screen and (min-width: 800px) {
-    .project-image {
-      width: 70%;
-    }
-
     .info-container {
       .project-name {
         font-size: 25px;

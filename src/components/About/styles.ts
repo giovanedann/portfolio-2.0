@@ -128,6 +128,11 @@ export const SkillContainer = styled.div`
   margin: 20px 0;
   transition: 0.2s ease-in-out;
 
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
   .skill-icon, p {
     transition: 0.2s ease-in-out;
   }
