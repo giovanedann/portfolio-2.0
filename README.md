@@ -6,8 +6,9 @@ Refactored with Typescript, React and Styled Components!
 - [x] - Projects section
 - [x] - Contact Section
 - [x] - Footer section
-- [ ] - Implement Context API
+- [x] - Implement Context API for theming
 - [ ] - Animations on user scroll
 - [ ] - Tests with RTL
+- [ ] - Implement stryker on tests
 
 Feel free to give feedbacks and tips about the structure and style of the page!

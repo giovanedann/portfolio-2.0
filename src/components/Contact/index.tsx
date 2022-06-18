@@ -4,7 +4,6 @@ import { SiGithub, SiLinkedin  } from 'react-icons/si'
 const Contact: React.FC = () => {
   return (
     <ContactContainer id="Contact">
-
       <h1>Contact me</h1>
       <div className="purple-line"></div>
       <ContactTextsContainer>
