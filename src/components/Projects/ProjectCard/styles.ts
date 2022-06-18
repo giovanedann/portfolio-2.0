@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { mainPurple } from '../../../styles/constants';
-
 export const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,9 +47,8 @@ export const ProjectCardContainer = styled.div`
       span {
         padding: 6px;
         font-size: 9px;
-        background-color: #222;
+        background-color: #2e2e2e;
         color: #fff;
-        border: 3px solid rgba(255, 255, 255, 0.1);
         font-weight: 400;
         border-radius: 6px;
         opacity: 0.8;
@@ -59,7 +56,7 @@ export const ProjectCardContainer = styled.div`
 
         &:hover {
           cursor: default;
-          transform: translateY(-3px);
+          transform: translateY(-2px);
         }
       }
     }
@@ -80,11 +77,17 @@ export const ProjectCardContainer = styled.div`
         text-decoration: none;
         border-radius: 5px;
         color: white;
-        background-color: ${mainPurple};
+        background-color: ${({theme}) => theme.colors.purple.main};
         transition: 0.3s ease-in-out;
+
+        .icon {
+          background: transparent;
+          fill: white;
+        }
+
         
         &:hover {
-          transform: translateY(-5px);
+          transform: translateY(-2px);
         }
       }
     }
@@ -93,7 +96,7 @@ export const ProjectCardContainer = styled.div`
   .purple-line {
     width: 90%;
     height: 3px;
-    background: ${mainPurple};
+    background: ${({theme}) => theme.colors.purple.main};
     margin-top: 30px;
   }
 
@@ -125,7 +128,6 @@ export const ProjectCardContainer = styled.div`
 
     @media screen and (min-width: 1000px) {
       flex-direction: row;
-      background-color: #282833;
       padding: 20px;
       width: 900px;
       height: 400px;

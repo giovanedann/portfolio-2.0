@@ -10,7 +10,6 @@ const About: React.FC = () => {
 
   return (
     <AboutContainer>
-
       <AboutSection>
         <div className="description">
           <h1>Giovane <span>{ text }<Cursor /></span></h1>

@@ -1,31 +1,56 @@
-import { createGlobalStyle } from "styled-components";
-import { mainBackgroundColor, fontFamily, mainLightPurple } from './constants';
+import { css, createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+interface Props {
+  selectedTheme: string
+}
+
+export const GlobalStyles = createGlobalStyle<Props>`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
   }
-
-  *, input, button {
-    font-family: ${fontFamily};
+  
+  *, input, button, a {
+    font-family: 'poppins', sans-serif;
+    ${
+      ({ selectedTheme }) => selectedTheme === 'dark'
+      ? css`
+          background-color: ${({ theme }) => theme.colors.background.dark};
+          color: ${({ theme }) => theme.colors.fontColor.dark};
+        `
+      : css`
+          background-color: ${({ theme }) => theme.colors.background.light};
+          color: ${({ theme }) => theme.colors.fontColor.light};
+        `
+    }
   }
 
   body {
-    background-color: ${mainBackgroundColor};
-    color: #fff;
+    scrollbar-color: ${({ theme }) => theme.colors.purple.light };
     scrollbar-width: 5px;
-    scrollbar-color: ${mainLightPurple}
+    
+    ${
+      ({ selectedTheme }) => selectedTheme === 'dark'
+      ? css`
+          background-color: ${({ theme }) => theme.colors.background.dark};
+          color: ${({ theme }) => theme.colors.fontColor.dark};
+        `
+      : css`
+          background-color: ${({ theme }) => theme.colors.background.light};
+          color: ${({ theme }) => theme.colors.fontColor.light};
+        `
+    }
   }
 
   body::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: ${mainLightPurple};
+    background-color: ${({ theme }) => theme.colors.purple.light};
     border-radius: 2px;
   }
 `;

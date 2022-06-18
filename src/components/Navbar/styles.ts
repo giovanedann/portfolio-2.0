@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { mainBackgroundColor, mainPurple } from "../../styles/constants";
 
 export const NavbarStyles = styled.nav<{ toggled: boolean }>`
   display: flex;
@@ -10,7 +9,6 @@ export const NavbarStyles = styled.nav<{ toggled: boolean }>`
   inset: 0;
   justify-content: center;
   align-items: center;
-  background-color: ${mainBackgroundColor};
   width: 100%;
   height: 100vh;
   transform: translateY(-1000px);
@@ -34,12 +32,11 @@ export const NavbarStyles = styled.nav<{ toggled: boolean }>`
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
-        color: #FFF;
         transition: 0.3s ease-in-out;
         scroll-behavior: smooth;
 
         &:hover {
-          color: ${mainPurple};
+          color: ${({ theme }) => theme.colors.purple.main };
         }
       }
     }
