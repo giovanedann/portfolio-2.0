@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { mainLightPurple } from '../../../styles/constants';
 
 export const ProjectSectionContainer = styled.div`
   display: flex;
@@ -19,7 +18,7 @@ export const ProjectSectionContainer = styled.div`
     width: 80%;
     height: 5px;
     border-radius: 10px;
-    background-color: ${ mainLightPurple }
+    background-color: ${({ theme }) => theme.colors.purple.light};
   }
 
   @media screen and (min-width: 800px) {

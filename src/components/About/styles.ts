@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { mainLightPurple } from "../../styles/constants";
 
 export const AboutContainer = styled.div`
   margin-top: 15rem;
@@ -17,7 +16,7 @@ export const AboutSection = styled.section`
   align-items: center;
 
   .line {
-    background: ${mainLightPurple};
+    background: ${({theme}) => theme.colors.purple.light};
     width: 90%;
     height: 4px;
     margin: 4rem 0;
@@ -45,7 +44,7 @@ export const AboutSection = styled.section`
 
     span {
       font-weight: 700;
-      color: ${mainLightPurple}
+      color: ${({theme}) => theme.colors.purple.light};
     }
 
     .emoji {
@@ -86,7 +85,7 @@ export const SkillsSection = styled.section`
   }
 
   .line {
-    background: ${mainLightPurple};
+    background: ${({theme}) => theme.colors.purple.light};
     width: 82%;
     height: 4px;
     margin: 4rem 0;
@@ -97,6 +96,7 @@ export const SkillsSection = styled.section`
     flex-flow: row wrap;
     width: 80%;
     justify-content: center;
+
   }
 
   @media screen and (min-width: 600px) {
@@ -126,15 +126,14 @@ export const SkillContainer = styled.div`
   width: 120px;
   height: 120px;
   margin: 20px 0;
-  transition: 0.2s ease-in-out;
+  background: transparent;
+  transition: 0.2s ease-in-out !important;
 
   .skill-icon {
     width: 40px;
     height: 40px;
-  }
-
-  .skill-icon, p {
-    transition: 0.2s ease-in-out;
+    transition: 0s;
+    background: transparent;
   }
 
   p {
@@ -161,7 +160,6 @@ export const SkillContainer = styled.div`
     gap: 20px;
     width: 150px;
     height: 200px;
-    transition: 0.2s ease-in-out;
 
     .skill-icon {
       width: 50px;

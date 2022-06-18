@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { mainLightPurple } from '../../styles/constants';
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -16,7 +15,7 @@ export const ContactContainer = styled.div`
   .purple-line {
     width: 80%;
     height: 5px;
-    background-color: ${mainLightPurple};
+    background-color: ${({ theme }) => theme.colors.purple.light };
   }
 
   @media screen and (min-width: 800px) {
@@ -46,14 +45,15 @@ export const ContactTextsContainer = styled.div`
 
     span {
       font-weight: 600;
-      color: ${mainLightPurple};
+      color: ${({ theme }) => theme.colors.purple.light };
     }
 
     a {
       text-decoration: none;
-      color: ${mainLightPurple};
+      color: ${({ theme }) => theme.colors.purple.light };
       font-weight: 600;
       transition: 0.3s ease-in-out;
+      background: transparent;
       
       &:hover {
         opacity: 0.8;
@@ -70,17 +70,20 @@ export const ContactTextsContainer = styled.div`
     gap: 40px;
     margin-top: 10px;
     margin-bottom: 50px;
+    background: transparent;
 
     .social-icon {
       width: 40px;
       height: 40px;
-      transition: 0.3s ease-in-out;
+      background: transparent;
+      transition: 0.2s ease-in-out !important;
     }
 
     a {
       color: white;
       text-decoration: none;
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out !important;
+      background: transparent;
 
       &:hover {
         transform: translateY(-2px);
