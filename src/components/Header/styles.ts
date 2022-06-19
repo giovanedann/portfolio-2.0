@@ -26,6 +26,8 @@ export const HeaderContainer = styled.header<Props>`
 
   .theme-icon {
     background: transparent;
+    position: fixed;
+    right: 100px;
     
     &:hover {
       cursor: pointer;
