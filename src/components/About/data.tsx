@@ -13,29 +13,35 @@ import {
   SiNodedotjs,
   SiExpress,
   SiJest,
-  SiPython,
   SiSass,
-} from 'react-icons/si'
+  SiDocker,
+  SiMysql,
+  SiPostgresql,
+  SiFramer,
+} from 'react-icons/si';
 
-interface SkillsObject {
+interface ISkillsObject {
   name: string
   svg: React.ReactNode
   color: string
 }
 
-export const skills: Array<SkillsObject> = [
+export const skills: ISkillsObject[] = [
+  { name: 'TypeScript', svg: <SiTypescript className="skill-icon"/>, color: '#2F74C0' },
+  { name: 'React', svg: <SiReact className="skill-icon"/>, color: '#5ED3F3' },
+  { name: 'Styled Components', svg: <SiStyledcomponents className="skill-icon"/>, color: '#E9BDEA' },
+  { name: 'Framer Motion', svg: <SiFramer className="skill-icon"/>, color: '#E700AF' },
   { name: 'Git', svg: <SiGit className="skill-icon"/>, color: '#E84E31' },
   { name: 'HTML', svg: <SiHtml5 className="skill-icon"/>, color: '#DD4B25' },
   { name: 'CSS', svg: <SiCss3 className="skill-icon"/>, color: '#52A1DE' },
   { name: 'JavaScript', svg: <SiJavascript className="skill-icon"/>, color: '#EFD81D' },
-  { name: 'TypeScript', svg: <SiTypescript className="skill-icon"/>, color: '#2F74C0' },
-  { name: 'React', svg: <SiReact className="skill-icon"/>, color: '#5ED3F3' },
   { name: 'Redux', svg: <SiRedux className="skill-icon"/>, color: '#764ABC' },
-  { name: 'Styled Components', svg: <SiStyledcomponents className="skill-icon"/>, color: '#E9BDEA' },
   { name: 'SASS', svg: <SiSass className="skill-icon"/>, color: '#CF649A' },
-  { name: 'RTL', svg: <SiTestinglibrary className="skill-icon"/>, color: '#DC1B25' },
+  { name: 'Testing Library', svg: <SiTestinglibrary className="skill-icon"/>, color: '#DC1B25' },
   { name: 'NodeJS', svg: <SiNodedotjs className="skill-icon"/>, color: '#89BB3C' },
   { name: 'ExpressJS', svg: <SiExpress className="skill-icon"/>, color: '#7B7B7B' },
   { name: 'Jest', svg: <SiJest className="skill-icon"/>, color: '#7E3653' },
-  { name: 'Python', svg: <SiPython className="skill-icon"/>, color: '#366996' },
+  { name: 'Docker', svg: <SiDocker className="skill-icon"/>, color: '#2496ED' },
+  { name: 'MySQL', svg: <SiMysql className="skill-icon"/>, color: '#E18E51' },
+  { name: 'PostgreSQL', svg: <SiPostgresql className="skill-icon"/>, color: '#31648C' },
 ]
