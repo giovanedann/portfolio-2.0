@@ -181,7 +181,8 @@ export const SkillContainer = styled(motion.div)`
     }
 
     p {
-      font-size: 15px;
+      font-size: 18px;
+      max-width: 120px;
     }
   }
 `;

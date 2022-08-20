@@ -7,7 +7,6 @@ import {
 import { skills } from "./data";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { useEffect } from "react";
 
 const About: React.FC = () => {
   const { text } = useTypewriter({
@@ -85,14 +84,6 @@ const About: React.FC = () => {
                 transition: {
                   delay: innerWidth > 1200 ? index * 0.1 : Math.random() - 0.5,
                   bounce: 0.5,
-                },
-              }}
-              whileHover={{
-                y: -10,
-                transition: {
-                  type: "spring",
-                  bounce: 0.7,
-                  duration: 0.2,
                 },
               }}
               key={name}
