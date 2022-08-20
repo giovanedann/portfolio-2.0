@@ -1,30 +1,30 @@
-import { myTunes, myWallet, teslaUiClone, topTrumpsGame, GPT3 } from '../../assets';
+import { myTunes, myWallet, teslaUiClone, MyContacts, NeonTrivia, CodeChef } from '../../assets';
 
 interface ProjectsObjProperties {
   name: string
   description: string
   technologies: string[]
   repository: string
-  deploy: string
+  deploy?: string
   image: any
 }
 
 export const projects: Array<ProjectsObjProperties> = [
   {
-    name: 'GPT3',
-    description: 'A landing page of a GPT3 AI based on a Figma design.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    repository: 'https://github.com/giovanedann/gpt3-project',
-    deploy: 'https://giovanedann.github.io/gpt3-project/',
-    image: GPT3
+    name: 'Neon Trivia',
+    description: 'Trivia game with Neon styles! Developed in group during Trybe course.',
+    technologies: ['React', 'SASS', 'Redux', 'Testing Library', 'Class Components'],
+    repository: 'https://github.com/giovanedann/trivia-game',
+    deploy: 'https://carolinakauark.github.io/trivia-game/',
+    image: NeonTrivia
   },
   {
-    name: 'Top Trumps',
-    description: 'Top Trumps game card creation, based on the norse mithology!',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    repository: 'https://github.com/giovanedann/top-trumps',
-    deploy: 'https://giovanedann.github.io/top-trumps/',
-    image: topTrumpsGame
+    name: 'Code Chef',
+    description: 'Recipes app, made following the Mobile First methodology!',
+    technologies: ['React', 'Styled Components', 'Framer Motion', 'Testing Library'],
+    repository: 'https://github.com/giovanedann/code-chef',
+    deploy: 'https://code-chef-app.vercel.app/',
+    image: CodeChef
   },
   {
     name: 'My Tunes',
@@ -49,5 +49,12 @@ export const projects: Array<ProjectsObjProperties> = [
     repository: 'https://github.com/giovanedann/tesla-ui-clone',
     deploy: 'https://giovanedann.github.io/tesla-ui-clone/',
     image: teslaUiClone
+  },
+  {
+    name: 'My Contacts',
+    description: 'FullStack application to manage contacts',
+    technologies: ['Hooks', 'Styled Components', 'React', 'Node.js', 'Docker', 'PostgreSQL'],
+    repository: 'https://github.com/giovanedann/my-contacts',
+    image: MyContacts
   },
 ];

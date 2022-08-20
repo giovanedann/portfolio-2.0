@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProjectCardContainer = styled.div`
   display: flex;
@@ -42,6 +42,10 @@ export const ProjectCardContainer = styled.div`
     .project-techs {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
+      max-width: 95%;
+      align-items: center;
+      justify-content: center;
       margin: 20px 0;
 
       span {
@@ -77,7 +81,7 @@ export const ProjectCardContainer = styled.div`
         text-decoration: none;
         border-radius: 5px;
         color: white;
-        background-color: ${({theme}) => theme.colors.purple.main};
+        background-color: ${({ theme }) => theme.colors.purple.main};
         transition: 0.3s ease-in-out;
 
         .icon {
@@ -85,7 +89,6 @@ export const ProjectCardContainer = styled.div`
           fill: white;
         }
 
-        
         &:hover {
           transform: translateY(-2px);
         }
@@ -96,7 +99,7 @@ export const ProjectCardContainer = styled.div`
   .purple-line {
     width: 90%;
     height: 3px;
-    background: ${({theme}) => theme.colors.purple.main};
+    background: ${({ theme }) => theme.colors.purple.main};
     margin-top: 30px;
   }
 
@@ -123,7 +126,6 @@ export const ProjectCardContainer = styled.div`
           padding: 10px;
         }
       }
-
     }
 
     @media screen and (min-width: 1000px) {
@@ -156,7 +158,5 @@ export const ProjectCardContainer = styled.div`
         }
       }
     }
-
   }
-
 `;

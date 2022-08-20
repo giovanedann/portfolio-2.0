@@ -64,10 +64,8 @@ const About: React.FC = () => {
         <div className="skills-container">
           {skills.map(({ name, svg, color }) => (
             <SkillContainer
-              initial={{ opacity: 0.5 }}
               whileHover={{
                 y: -10,
-                opacity: 1,
                 transition: {
                   type: "spring",
                   bounce: 0.4,
