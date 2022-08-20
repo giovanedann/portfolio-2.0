@@ -17,9 +17,8 @@ const About: React.FC = () => {
   return (
     <AboutContainer>
       <AboutSection
-        initial={fade.initial}
-        whileInView={fade.animate}
-        transition={fade.transition}
+        initial={{ x: -300, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: false }}
       >
         <div className="description">
@@ -54,9 +53,8 @@ const About: React.FC = () => {
       </AboutSection>
 
       <SkillsSection
-        initial={fade.initial}
-        whileInView={fade.animate}
-        transition={fade.transition}
+        initial={{ x: 300, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: false }}
       >
         <h1>Skills</h1>

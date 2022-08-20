@@ -8,11 +8,15 @@ interface ProjectCardProps {
   repository: string;
   deploy: string;
   image: any;
+  position: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   return (
-    <ProjectCardContainer>
+    <ProjectCardContainer
+      initial={{ opacity: 0, x: props.position === "right" ? 200 : -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+    >
       <div className="project-image-container">
         <img className="project-image" src={props.image} alt={props.name} />
       </div>

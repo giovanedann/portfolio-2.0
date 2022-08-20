@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ProjectCardContainer = styled.div`
+export const ProjectCardContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 30px 0;
+  overflow: hidden;
 
   .project-image-container {
     display: flex;
