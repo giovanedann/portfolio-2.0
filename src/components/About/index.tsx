@@ -6,12 +6,16 @@ import {
 } from "./styles";
 import { skills } from "./data";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { useEffect } from "react";
 
 const About: React.FC = () => {
   const { text } = useTypewriter({
     words: ["Sass", "Saes"],
     loop: 1,
   });
+
+  const { innerWidth } = useWindowDimensions();
 
   return (
     <AboutContainer>
@@ -78,7 +82,10 @@ const About: React.FC = () => {
               whileInView={{
                 opacity: 1,
                 y: 0,
-                transition: { delay: index * 0.1, bounce: 0.5 },
+                transition: {
+                  delay: innerWidth > 1200 ? index * 0.1 : Math.random(),
+                  bounce: 0.5,
+                },
               }}
               whileHover={{
                 y: -10,
