@@ -1,11 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 interface Props {
-  toggled: boolean
-  selectedTheme?: string
+  toggled: boolean;
+  selectedTheme?: string;
 }
 
-export const HeaderContainer = styled.header<Props>`
+export const HeaderContainer = styled(motion.header)<Props>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +21,7 @@ export const HeaderContainer = styled.header<Props>`
   .burger-icon {
     &:hover {
       cursor: pointer;
-      fill: #999E9C;
+      fill: #999e9c;
     }
   }
 
@@ -28,12 +29,12 @@ export const HeaderContainer = styled.header<Props>`
     background: transparent;
     position: fixed;
     right: 100px;
-    
+
     &:hover {
       cursor: pointer;
     }
   }
-`
+`;
 
 export const NameDiv = styled.div`
   display: flex;
