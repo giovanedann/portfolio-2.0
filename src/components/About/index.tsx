@@ -62,12 +62,18 @@ const About: React.FC = () => {
         <div className="skills-container">
           {skills.map(({ name, svg, color }) => (
             <SkillContainer
+              initial={{ opacity: 0, y: -70 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: Math.random(), bounce: 0.5 },
+              }}
               whileHover={{
                 y: -10,
                 transition: {
                   type: "spring",
-                  bounce: 0.4,
-                  duration: 0.1,
+                  bounce: 0.7,
+                  duration: 0.2,
                 },
               }}
               key={name}
