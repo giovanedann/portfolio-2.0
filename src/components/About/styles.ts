@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const AboutContainer = styled.div`
   margin-top: 15rem;
@@ -7,16 +8,16 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
-export const AboutSection = styled.section`
+export const AboutSection = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
   .line {
-    background: ${({theme}) => theme.colors.purple.light};
+    background: ${({ theme }) => theme.colors.purple.light};
     width: 90%;
     height: 4px;
     margin: 4rem 0;
@@ -44,7 +45,7 @@ export const AboutSection = styled.section`
 
     span {
       font-weight: 700;
-      color: ${({theme}) => theme.colors.purple.light};
+      color: ${({ theme }) => theme.colors.purple.light};
     }
 
     .emoji {
@@ -55,7 +56,7 @@ export const AboutSection = styled.section`
   @media screen and (min-width: 1200px) {
     flex-direction: row;
 
-    .description{
+    .description {
       width: 70%;
 
       h1 {
@@ -73,19 +74,19 @@ export const AboutSection = styled.section`
   }
 `;
 
-export const SkillsSection = styled.section`
+export const SkillsSection = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  
+
   h1 {
     font-size: 40px;
   }
 
   .line {
-    background: ${({theme}) => theme.colors.purple.light};
+    background: ${({ theme }) => theme.colors.purple.light};
     width: 82%;
     height: 4px;
     margin: 4rem 0;
@@ -96,7 +97,6 @@ export const SkillsSection = styled.section`
     flex-flow: row wrap;
     width: 80%;
     justify-content: center;
-
   }
 
   @media screen and (min-width: 600px) {
@@ -118,7 +118,7 @@ export const SkillsSection = styled.section`
   }
 `;
 
-export const SkillContainer = styled.div`
+export const SkillContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,11 +145,11 @@ export const SkillContainer = styled.div`
     transform: scale(1.04);
 
     .skill-icon {
-      fill: ${ ({ color }) => color }
+      fill: ${({ color }) => color};
     }
-    
+
     p {
-      color: ${ ({ color }) => color }
+      color: ${({ color }) => color};
     }
   }
 
@@ -170,7 +170,7 @@ export const SkillContainer = styled.div`
   @media screen and (min-width: 1300px) {
     width: 200px;
     height: 250px;
-    
+
     .skill-icon {
       width: 70px;
       height: 70px;
