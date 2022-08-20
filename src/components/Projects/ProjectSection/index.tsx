@@ -4,7 +4,12 @@ import { projects } from "../data";
 
 const ProjectSection: React.FC = () => {
   return (
-    <ProjectSectionContainer id="Projects">
+    <ProjectSectionContainer
+      id="Projects"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
+    >
       <h1>Projects</h1>
       <div className="purple-line"></div>
       <ProjectCardsContainer>

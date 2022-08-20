@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,7 @@ export const ContactContainer = styled.div`
   .purple-line {
     width: 80%;
     height: 5px;
-    background-color: ${({ theme }) => theme.colors.purple.light };
+    background-color: ${({ theme }) => theme.colors.purple.light};
   }
 
   @media screen and (min-width: 800px) {
@@ -29,7 +30,7 @@ export const ContactContainer = styled.div`
       font-size: 60px;
     }
   }
-` 
+`;
 
 export const ContactTextsContainer = styled.div`
   display: flex;
@@ -45,16 +46,16 @@ export const ContactTextsContainer = styled.div`
 
     span {
       font-weight: 600;
-      color: ${({ theme }) => theme.colors.purple.light };
+      color: ${({ theme }) => theme.colors.purple.light};
     }
 
     a {
       text-decoration: none;
-      color: ${({ theme }) => theme.colors.purple.light };
+      color: ${({ theme }) => theme.colors.purple.light};
       font-weight: 600;
       transition: 0.3s ease-in-out;
       background: transparent;
-      
+
       &:hover {
         opacity: 0.8;
       }
@@ -89,11 +90,11 @@ export const ContactTextsContainer = styled.div`
         transform: translateY(-2px);
 
         .linkedin {
-          fill: #0A66C2;
+          fill: #0a66c2;
         }
 
         .github {
-          fill: #7B7B7B;
+          fill: #7b7b7b;
         }
       }
     }

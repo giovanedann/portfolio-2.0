@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ProjectSectionContainer = styled.div`
+export const ProjectSectionContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
@@ -32,7 +33,6 @@ export const ProjectSectionContainer = styled.div`
       font-size: 60px;
     }
   }
-
 `;
 
 export const ProjectCardsContainer = styled.div`
