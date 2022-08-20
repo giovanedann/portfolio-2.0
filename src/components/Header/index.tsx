@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           <HeaderText toggled={toggleLinks}>Giovane Saes</HeaderText>
         </NameDiv>
 
-        {theme === "light" && (
+        {theme === "dark" && (
           <FiSun
             className="theme-icon"
             size={30}
@@ -37,7 +37,8 @@ const Header: React.FC = () => {
             color="white"
           />
         )}
-        {theme === "dark" && (
+
+        {theme === "light" && (
           <FiMoon
             className="theme-icon"
             size={30}
