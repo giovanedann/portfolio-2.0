@@ -83,7 +83,7 @@ const About: React.FC = () => {
                 opacity: 1,
                 y: 0,
                 transition: {
-                  delay: innerWidth > 1200 ? index * 0.1 : Math.random(),
+                  delay: innerWidth > 1200 ? index * 0.1 : Math.random() - 0.5,
                   bounce: 0.5,
                 },
               }}
