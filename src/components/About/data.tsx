@@ -44,6 +44,22 @@ export const skills: ISkillsObject[] = [
     svg: <SiFramer className="skill-icon" />,
     color: "#E700AF",
   },
+  { name: "Redux", svg: <SiRedux className="skill-icon" />, color: "#764ABC" },
+  {
+    name: "Testing Library",
+    svg: <SiTestinglibrary className="skill-icon" />,
+    color: "#DC1B25",
+  },
+  {
+    name: "Docker",
+    svg: <SiDocker className="skill-icon" />,
+    color: "#2496ED",
+  },
+  {
+    name: "Webpack",
+    svg: <SiWebpack className="skill-icon" />,
+    color: "#31648C",
+  },
   { name: "Git", svg: <SiGit className="skill-icon" />, color: "#E84E31" },
   { name: "HTML", svg: <SiHtml5 className="skill-icon" />, color: "#DD4B25" },
   { name: "CSS", svg: <SiCss3 className="skill-icon" />, color: "#52A1DE" },
@@ -52,13 +68,7 @@ export const skills: ISkillsObject[] = [
     svg: <SiJavascript className="skill-icon" />,
     color: "#EFD81D",
   },
-  { name: "Redux", svg: <SiRedux className="skill-icon" />, color: "#764ABC" },
   { name: "SASS", svg: <SiSass className="skill-icon" />, color: "#CF649A" },
-  {
-    name: "Testing Library",
-    svg: <SiTestinglibrary className="skill-icon" />,
-    color: "#DC1B25",
-  },
   {
     name: "NodeJS",
     svg: <SiNodedotjs className="skill-icon" />,
@@ -70,20 +80,10 @@ export const skills: ISkillsObject[] = [
     color: "#7B7B7B",
   },
   { name: "Jest", svg: <SiJest className="skill-icon" />, color: "#7E3653" },
-  {
-    name: "Docker",
-    svg: <SiDocker className="skill-icon" />,
-    color: "#2496ED",
-  },
   { name: "MySQL", svg: <SiMysql className="skill-icon" />, color: "#E18E51" },
   {
     name: "PostgreSQL",
     svg: <SiPostgresql className="skill-icon" />,
-    color: "#31648C",
-  },
-  {
-    name: "Webpack",
-    svg: <SiWebpack className="skill-icon" />,
     color: "#31648C",
   },
 ];

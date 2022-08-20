@@ -60,13 +60,13 @@ const About: React.FC = () => {
         <h1>Skills</h1>
         <div className="line"></div>
         <div className="skills-container">
-          {skills.map(({ name, svg, color }) => (
+          {skills.map(({ name, svg, color }, index) => (
             <SkillContainer
               initial={{ opacity: 0, y: -70 }}
               whileInView={{
                 opacity: 1,
                 y: 0,
-                transition: { delay: Math.random(), bounce: 0.5 },
+                transition: { delay: index * 0.1, bounce: 0.5 },
               }}
               whileHover={{
                 y: -10,
