@@ -41,7 +41,11 @@ export const AboutSection = styled(motion.section)`
 
   p {
     font-weight: 400;
-    margin: 25px 0;
+    margin: 3rem 0;
+
+    a {
+      text-decoration: none;
+    }
 
     span {
       font-weight: 700;

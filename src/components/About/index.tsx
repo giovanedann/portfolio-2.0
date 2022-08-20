@@ -6,7 +6,6 @@ import {
 } from "./styles";
 import { skills } from "./data";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { fade } from "../../animations";
 
 const About: React.FC = () => {
   const { text } = useTypewriter({
@@ -44,10 +43,23 @@ const About: React.FC = () => {
             and fell in love with web development, specially Front-End.
           </p>
           <p>
-            I am really passionate about solving problems and{" "}
-            <span>
-              i'm open for work! <span className="emoji">😁</span>
-            </span>
+            I am currently working on a Software Development company that mainly
+            uses TypeScript, React, Framer Motion and Styled Components on it's
+            projects.
+          </p>
+          <p>
+            I am responsible for improving the UX/UI and add new features
+            related with Front-End in the softwares developed by the team.
+            Sometimes i take an adventure on the Back-End of the applications to
+            improve my skills. 😅
+          </p>
+          <p>
+            If you're interested in talking to me, feel free to reach me, the
+            details about my socials are in this{" "}
+            <a href="#Contact">
+              <span>section</span>
+            </a>
+            .
           </p>
         </div>
       </AboutSection>
