@@ -1,12 +1,12 @@
-import {
-  AboutSection,
-  SkillsSection,
-  AboutContainer,
-  SkillContainer,
-} from "./styles";
-import { skills } from "./data";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { skills } from "./data";
+import {
+  AboutContainer,
+  AboutSection,
+  SkillContainer,
+  SkillsSection,
+} from "./styles";
 
 const About: React.FC = () => {
   const { text } = useTypewriter({
@@ -34,27 +34,20 @@ const About: React.FC = () => {
           <h2 id="About">Front-End Developer</h2>
           <div className="line"></div>
           <p>
-            <span>Hello 👋, i'm Giovane!</span> A Front-End Developer based in
+            <span>Hello, i'm Giovane!</span> A Full-Stack Developer based in
             São Paulo, Brazil.
           </p>
           <p>
-            Since i finished my degree in Mechanical Engineering, i started to
-            program things using VBA and Excel.
+            I am a passionate developer currently working on 2 Software Development companies, one in Brazil (BWS IoT), and one in USA (IntegrateIQ).
           </p>
           <p>
-            After seeing the power of programming, i started learning JavaScript
-            and fell in love with web development, specially Front-End.
+            On BWS, my main tasks are to improve the client side of the softwares built with Typescript, React and React Native. But when needed, i love to jump on the server side to create new use cases.
           </p>
           <p>
-            I am currently working on a Software Development company that mainly
-            uses TypeScript, React, Framer Motion and Styled Components on it's
-            projects.
+            On IntegrateIQ, my main tasks are to create new Python scripts and add endpoints and stuff to the API.
           </p>
           <p>
-            I am responsible for improving the UX/UI and add new features
-            related with Front-End in the softwares developed by the team.
-            Sometimes i take an adventure on the Back-End of the applications to
-            improve my skills. 😅
+            I am a competitive folk which is always trying to improve. I am never happy with my current state, because i know i can do more.
           </p>
           <p>
             If you're interested in talking to me, feel free to reach me, the
