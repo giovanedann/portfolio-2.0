@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+
+  pre-build:
+    commands:
+      - npm pkg delete scripts.dev
+      - npm ci
+
+  build:
+    commands:
+      - npm run build
