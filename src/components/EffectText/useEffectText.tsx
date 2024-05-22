@@ -23,12 +23,13 @@ export function useEffectText({ words, startDelay }: { words: string, startDelay
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div ref={scope} className="overflow-hidden">
         {wordsArray.map((word, index) => {
           return (
             <motion.span
               key={word + index}
-              className="text-white opacity-0"
+              initial={{ opacity: 0 }}
+              className="text-white"
             >
               {word}{' '}
             </motion.span>
