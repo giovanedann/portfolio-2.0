@@ -10,6 +10,11 @@ export function useWindowWidth() {
     setWidth(window.innerWidth)
   }, [])
 
+  // Sets the initial window size after rendering on client, because on the build, the value will stay 1080 forever untill the resize happens
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, []);
+
   useEffect(() => {
     window.addEventListener('resize', handleResize)
 
