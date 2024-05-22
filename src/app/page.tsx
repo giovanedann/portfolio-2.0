@@ -6,11 +6,8 @@ import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 
 import { EffectText } from "@/components/EffectText";
 import { Meteors } from '@/components/Meteors';
-import { useWindowWidth } from '@/hooks/useWindowWidth';
 
 export default function Home() {
-  const windowWidth = useWindowWidth();
-
   return (
     <main className="relative overflow-hidden bg-black/80 flex min-h-screen flex-col items-center justify-center">
       <EffectText className="font-bold z-40" words="Giovane Saes" textSize="text-5xl lg:text-7xl" startDelay={1} />
@@ -31,7 +28,7 @@ export default function Home() {
         </motion.a>
       </section>
 
-      <Meteors number={100} left={windowWidth > 1080 ? 3000 : 600 }/>
+      <Meteors number={100} />
     </main>
   );
 }
